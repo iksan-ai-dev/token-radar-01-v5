@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Token Launch Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Token Launch Radar</h1>
+    <p class="sub">Pre-token protocols, ranked by what a token would be worth if the record stayed as it is.
+    Snapshot <span id="asOf">—</span> · DefiLlama sealed snapshot · <span id="scanLine">—</span></p>
+  </div>
+  <div class="badge" id="badge">page = board.json</div>
+</header>
+
+<section class="cards" id="cards"></section>
+
+<div class="formula">
+  <div class="f1">implied&nbsp;=&nbsp;TVL&nbsp;×&nbsp;curve(TVL)&nbsp;×&nbsp;category&nbsp;×&nbsp;ageFactor&nbsp;×&nbsp;growthFactor&nbsp;×&nbsp;breadthFactor</div>
+  <div class="f2" id="f2"></div>
+</div>
+
+<nav class="tabs" id="tabs">
+  <a href="#/" data-tab="board">Board</a>
+  <a href="#/trading" data-tab="trading">Already trading</a>
+  <a href="#/setaside" data-tab="setaside">Set aside</a>
+  <a href="#/model" data-tab="model">Model</a>
+</nav>
+
+<main id="view"></main>
+
+<footer class="foot">“Records no token” is what DefiLlama records — not proof a protocol has no token.
+Implied values are this entry’s model, not a prediction of whether or when a token is issued.
+Farm steps are positioning, not a promise of an allocation. Gas figures are builder estimates.</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
